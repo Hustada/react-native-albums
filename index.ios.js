@@ -6,6 +6,7 @@
 
 import React from 'react';
 //import text property from react library
+// Only the root file(this file) uses 'AppRegisty'
 import { Text, AppRegistry } from 'react-native';
 
 // React - Knows how a component should behave
@@ -24,6 +25,7 @@ const App = () => (
 );
 
 // In react, nothing gets wired up for you, you have to specfically tell react that you want to render it.
+// Always create one component PER file.
 // Always make sure every variable is defined.
 // Try to make components reusable as possible.
 
