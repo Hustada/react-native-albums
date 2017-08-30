@@ -7,7 +7,8 @@
 import React from 'react';
 //import text property from react library
 // Only the root file(this file) uses 'AppRegisty'
-import { Text, AppRegistry } from 'react-native';
+import { AppRegistry } from 'react-native';
+import Header from './src/components/header';
 
 // React - Knows how a component should behave
 // knows how to take a bunch of components and make them work together
@@ -20,9 +21,13 @@ import { Text, AppRegistry } from 'react-native';
 
 // Create a component
 //JS6 is an extension of JS that looks a lot like HTML. Its a mask over vanilla JS.
+
+//Whenever we want to pass some data from app to child we use the props component
 const App = () => (
-  <Text>Some Text</Text>
+ <Header headerText={'Albums'} /> // self closing tag, pass in prop of 'headerText'
 );
+
+
 
 // In react, nothing gets wired up for you, you have to specfically tell react that you want to render it.
 // Always create one component PER file.
