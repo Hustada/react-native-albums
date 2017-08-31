@@ -8,6 +8,11 @@ import axios from 'axios';
 class AlbumList extends Component {
 	//class level property
 	//set initial state(empty list of albums)
+	// Rules of State
+	// - Definition of state: a plain javascript object to record and respond to user-triggered events.
+	// - When we need to update what a component shows, call `this.setState`
+	// - Only change state with `setState`, do not do `this.state = 123 or something`
+	// - Difference between prop and state(props are parent to child communication and state is for component internal record keeping)
 	state = { albums: [] };
 
 	componentWillMount() {
