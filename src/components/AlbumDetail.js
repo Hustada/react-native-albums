@@ -2,13 +2,14 @@ import React from 'react';
 import { Text, View, Image } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
+import Button from './Button';
 
 
 const AlbumDetail = ({ album }) => {
 	//create variable that holds album object attributes
 	// image will not expand by default. Need to manually add in styling rule.
 	// React does not scroll by default. Needs to be enabled.
-	
+
 	const { title, artist, thumbnail_image, image } = album;
 	const { 
 		thumbnailStyle, 
@@ -20,6 +21,7 @@ const AlbumDetail = ({ album }) => {
 
 	return (
 		<Card>
+		
 			<CardSection>
 			<View style={thumbnailContainerStyle}>
 				<Image
@@ -33,12 +35,18 @@ const AlbumDetail = ({ album }) => {
 				<Text>{artist}</Text>
 			</View>
 			</CardSection>
+
 			<CardSection>
 			<Image
 				style={imageStyle}
 				source={{ uri: image }}
 			/>
 			</CardSection>
+
+			<CardSection>
+				<Button />
+			</CardSection>
+
 		</Card>
 	);
 };
