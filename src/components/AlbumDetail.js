@@ -7,6 +7,8 @@ import CardSection from './CardSection';
 const AlbumDetail = ({ album }) => {
 	//create variable that holds album object attributes
 	// image will not expand by default. Need to manually add in styling rule.
+	// React does not scroll by default. Needs to be enabled.
+	
 	const { title, artist, thumbnail_image, image } = album;
 	const { 
 		thumbnailStyle, 

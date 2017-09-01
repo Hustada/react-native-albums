@@ -43,8 +43,9 @@ import AlbumList from './src/components/AlbumList';
 
 //Whenever we want to pass some data from app to child we use the props component
 // self closing tag, pass in prop of 'headerText'
+// flex 1 expands this component to fill the entire content area of the device.
 const App = () => (
- <View>
+ <View style={{ flex: 1 }}>
   <Header headerText={'Albums'} /> 
   <AlbumList />
  </View>
