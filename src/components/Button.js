@@ -4,11 +4,11 @@ import { Text, TouchableOpacity } from 'react-native';
 
 // if you pass one component to another it will show up as 'props.children'
 // "Touchable "" is just an fancy name for button with some user feedback
-const Button = () => {
+const Button = ({ onPress }) => {
 	const { buttonStyle, textStyle } = styles;
 
 	return (
-		<TouchableOpacity style={buttonStyle}>
+		<TouchableOpacity onPress={onPress} style={buttonStyle}>
 			<Text style={textStyle}>
 				Click Me!!!
 			</Text>

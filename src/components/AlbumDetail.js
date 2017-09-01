@@ -21,7 +21,7 @@ const AlbumDetail = ({ album }) => {
 
 	return (
 		<Card>
-		
+
 			<CardSection>
 			<View style={thumbnailContainerStyle}>
 				<Image
@@ -44,7 +44,7 @@ const AlbumDetail = ({ album }) => {
 			</CardSection>
 
 			<CardSection>
-				<Button />
+				<Button onPress={() => console.log(title)} />
 			</CardSection>
 
 		</Card>
