@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 
 // if you pass one component to another it will show up as 'props.children'
-const Card = (props) => {
+const CardSection = (props) => {
 	return (
 		<View style={styles.containerStyle}>
 			{props.children}
@@ -11,23 +11,17 @@ const Card = (props) => {
 	);
 };
 
-
 const styles = {
 	containerStyle: {
-		borderWidth: 1,
-		borderRadius: 2,
+		borderBottomWidth: 1,
+		padding: 5,
+		backgroundColor: '#fff',
+		justifyContent: 'flex-start',
+		flexDirection: 'row',
 		borderColor: '#ddd',
-		borderBottomWidth: 0,
-		shadowColor: '#000',
-		shadowOffset: { width: 0, height: 2},
-		shadowOpacity: 0.1,
-		shadowRadius: 2,
-		elevation: 1,
-		marginLeft: 5,
-		marginRight: 5,
-		marginTop: 10,
+		position: 'relative'
 	}
 };
 
 
-export default Card;
+export default CardSection;
